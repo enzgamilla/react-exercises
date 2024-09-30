@@ -1,10 +1,10 @@
 import "./App.css";
-import SignupForm from "./Exercises/SignupForm";
+import FetchDogAPI from "./Exercises/FetchDogAPI";
 
 function App() {
   return (
     <>
-      <SignupForm />
+      <FetchDogAPI />
     </>
   );
 }
