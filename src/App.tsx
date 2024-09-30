@@ -1,10 +1,9 @@
-import "./App.css";
-import Scorekeeper from "./Exercises/Scorekeeper";
+import WindowEvent from "./Exercises/WindowEvent";
 
 function App() {
   return (
     <>
-      <Scorekeeper />
+      <WindowEvent />
     </>
   );
 }
