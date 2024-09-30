@@ -1,10 +1,10 @@
 import "./App.css";
-import FetchDogAPI from "./Exercises/FetchDogAPI";
+import Scorekeeper from "./Exercises/Scorekeeper";
 
 function App() {
   return (
     <>
-      <FetchDogAPI />
+      <Scorekeeper />
     </>
   );
 }
