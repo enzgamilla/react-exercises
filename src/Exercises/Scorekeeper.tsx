@@ -1,28 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Scorekeeper = () => {
-  const [score, setScore] = useState(localStorage.getItem("score"));
+  const [score, setScore] = useState(
+    parseInt(localStorage.getItem("score")!) || 0
+  );
 
-  const handleAdd = () => {
-    const currentScore = parseInt(score!) + 1;
-    setScore(currentScore.toString());
-    localStorage.setItem("score", currentScore.toString()!);
-  };
-
-  const handleMinus = () => {
-    const currentScore = parseInt(score!) - 1;
-    setScore(currentScore.toString());
-    localStorage.setItem("score", currentScore.toString()!);
-  };
+  useEffect(() => {
+    localStorage.setItem("score", score.toString());
+  }, [score]);
 
   return (
     <div className="grid justify-center">
       <span>Your score is: {score}</span>
       <div className="flex space-x-2">
-        <button className="border p-1" onClick={handleMinus}>
+        <button
+          className="border p-1"
+          onClick={() => setScore((prevScore) => prevScore - 1)!}
+        >
           -
         </button>
-        <button className="border p-1" onClick={handleAdd}>
+        <button
+          className="border p-1"
+          onClick={() => setScore((prevScore) => prevScore + 1)!}
+        >
           +
         </button>
       </div>
