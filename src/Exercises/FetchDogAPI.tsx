@@ -10,9 +10,8 @@ const FetchDogAPI = () => {
   const [dogPic, setDogPic] = useState("");
 
   const fetchDog = async () => {
-    const dog = getDog();
-
-    setDogPic(await dog);
+    const dog = await getDog();
+    setDogPic(dog);
   };
 
   useEffect(() => {
