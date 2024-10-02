@@ -1,9 +1,9 @@
-import PixcelArt from "./Exercises/PixcelArt";
+import Calculator from "./Exercises/Calculator";
 
 function App() {
   return (
     <>
-      <PixcelArt />
+      <Calculator />
     </>
   );
 }
