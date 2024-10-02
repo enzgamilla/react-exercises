@@ -16,7 +16,7 @@ const WindowEvent = () => {
     return () => {
       window.removeEventListener("dblclick", handleDoubleClick);
     };
-  }, []);
+  }, [doubleClick]);
 
   return (
     <div>

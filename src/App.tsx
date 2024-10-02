@@ -1,9 +1,9 @@
-import WindowEvent from "./Exercises/WindowEvent";
+import PixcelArt from "./Exercises/PixcelArt";
 
 function App() {
   return (
     <>
-      <WindowEvent />
+      <PixcelArt />
     </>
   );
 }
