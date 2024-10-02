@@ -1,9 +1,9 @@
-import Calculator from "./Exercises/Calculator";
+import ShoppingCart from "./Exercises/ShoppingCart";
 
 function App() {
   return (
     <>
-      <Calculator />
+      <ShoppingCart />
     </>
   );
 }
